@@ -5,78 +5,77 @@
 }
 
 html {
-	font-family: Trebuchet MS;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Raleway', sans-serif;
+	min-width:600px;
 }
 
 body {
-	background-color: white;
-    /*text-align: center;*/
+    /*text-align: center;
+	background-color: rgba(255, 255, 255, 0.6);
+	background: url("https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");*/
+	/*Burada background resmi önüne opacity 0.6 bir renk ekleyip koymak istedim olmadı*/
 	padding: 0px;
-	margin: 0px 200px;
-	background-image: url("https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");
-    background: rgba(255, 0, 0, 0.00);
-    min-width: 500px;
+	margin: 0;
+	min-width: 500px;
     height:auto;
 	}
 
 h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 	background-color: teal;
 	color: white;
 	padding: 10px;
 	text-align: center;	
-	letter-spacing: 2px;
-}
-	
-a  {
-	color: teal;
+	letter-spacing: 1px;
+	margin: 0;
 }
 
-h1 {
-	text-transform: uppercase; color: darkcyan;	
-}
-
-img {
+/*img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 70%;
 	height: auto;
 	background-color: teal;
 	border-radius: 25px;
 	border-left: 30px solid teal;
 	border-right: 30px solid teal;
-	opacity: 0.9;
+	opacity: 0.9;*/
 }
 
-#introduction, #cycling, #cyclesport, #sitecontent p {
-	font-size: 15px;
-	font-weight: 100px;
-	letter-spacing: 0.5px;
-	color: dimgray;
-	min-width: 500px;
-	max-width: 900px;
+header{
+	margin: 0 auto;
+	width: 100%; /*Bu konuda problemim var!!! */
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+	height: auto;
 }
 
 .toplinks {
 	background-color: teal;
-	padding: 5px 5px 7px 5px;
-	margin: 0px;
+	padding: 20px;
+	margin: auto 0px;
+	height: 100%;
 	text-align: center;
-	/*position: fixed;
-	top: 0px;
-	z-index: 5;*/
 }
 
 .toplinks a {
-	font-size: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 0.625em;
+	text-transform: uppercase; 
 	color: white;
-	margin: 5px 12px;
+	margin: 5px 10px;
   	text-decoration: none;
 	letter-spacing: 1px;
 }
 
 .toplinks a:hover {
 	font-weight: bold;
+	color: red;
 }
 
 /*.toplinks .contact {
@@ -89,16 +88,16 @@ img {
 	background-color:white;
 	border-style: solid;
 	border-color: white;
-	border-width: 0px 0px 0px 0px;
+	border-width: 0px;
 }
 	
 .internal_links {
-	font-size: 13px;
+	font-size: 0.8em;
 	border: 2px solid teal;
 	border-radius: 5px;
 	border-right: 12px solid teal;
-	margin-top: 20px;
-	/*width: 325px;*/
+	margin: 30px 0;
+    position: relative;
 }
 
 .internal_links a {
@@ -107,14 +106,19 @@ img {
 
 .internal_links a:hover {
 	color: red;
+	font-weight: 600;
 }
 .internal_links .div1 {
 	float: left;
 	margin: 9px 0px auto 17px;
-	width: %55;
 	text-align: center left;
 	letter-spacing: 4px;
 	/*background-color: black;*/
+}
+
+h1 {
+	text-transform: uppercase; 
+	color: darkcyan;	
 }
 
 .internal_links .div2 {
@@ -123,42 +127,105 @@ img {
 	letter-spacing: 1px;
 }
 
+a {
+	color: teal;
+}
+
 /*#cycling, #cyclesport {
 	height: 1000px;
 	overflow: scroll;
 }*/
 
+#container {
+	height: 1700px;
+}
+
+#introduction {
+	background: linear-gradient(rgba(129, 197, 222,0.25), rgba(129, 197, 222,0.25)), url("https://wallpaper-house.com/data/out/8/wallpaper2you_254884.jpg");
+    background-size: cover;
+	background-position: top center;
+	height: 25%;
+	width: 100%;
+	}
+
+#cycling {
+	background-image: linear-gradient(rgba(129, 197, 222,0.25), rgba(129, 197, 222,0.25)), 
+	url("https://wallpaper-house.com/data/out/8/wallpaper2you_254861.jpg");
+    background-size: cover;
+	background-position: center;
+	height: 25%;
+	width: 100%;
+}
+
+#cyclesport {
+	background: linear-gradient(rgba(129, 197, 222,0.25), rgba(129, 197, 222,0.25)), url("https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_627,q_65,w_1200/v1/clients/norway/aa099db0_2134_4b29_bcf6_f423f8729c7a_c093a15e-0775-4297-b2a9-70ce7bdc5327.jpg");
+    background-size: cover;
+	background-position: center;
+	height: 25%;
+	width: 100%;
+}	
+
+#sitecontent {
+	background: linear-gradient(rgba(129, 197, 222,0.25), rgba(129, 197, 222,0.25)), url("https://wallpaper-house.com/data/out/8/wallpaper2you_254851.jpg");
+    background-size: cover;
+	background-position:  center;
+	height: 25%;
+	width: 100%;
+}
+
+.content p {
+	/*border: 3px solid white;
+	position: relative;
+	top: 50px;
+	margin: 0 auto;*/
+	/* Yazıların genişliğini küçültemedim*/
+	font-family: 'Raleway', serif;
+	font-size: 0.95em;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	color: white;
+	width: auto;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-right: 450px;
+	min-width: 300px;
+	line-height: 1.4;
+}
+
 .share {
 	/*border: 0.5px solid LightGrey;*/
-	padding: 40px 0px;
+	padding: 20px 0px;
 	position: relative;
 	text-align: center;
-	width: 100%
+	width: 100%;
+	background-color: teal; /*rgb (152, 217, 208);*/
 }
 
 .share a {
 	background: teal;
 	color: white;
-	border: 0.5px red solid;
-	border-radius: 5px;
-	/*display: inline-block;*/
+	border: 0.5px teal solid;
+	border-radius: 7px;
+	border-style: outset;
+	display: inline-block;
 	margin: 10px;
 	padding: 15px;
 	text-decoration: none;
-	font-family: 'Rockwell', serif;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
 }
 
 .share a:hover {
 	background: red;
 	color; white;
-	border: 0.5px teal solid;
-	border-radius: 5px;
+	border: 0.5px red solid;
+	border-radius: 15px;
 	/*animation: ease;*/
 }
 
-#footer {
+footer {
 	position: fixed;
-	font-size: 7px;
+	font-size: 0.5em;
 	opacity: 0.5;
 	left: 0;
 	bottom: 0;
