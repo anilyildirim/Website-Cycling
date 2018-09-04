@@ -1,55 +1,38 @@
+*{
+	box-sizing: border-box;
+	/*padding: 0;
+	margin: 0;*/
+}
+
 html {
 	font-family: Trebuchet MS;
-}
-
-a, h3 {
-	color: teal;
-}
-
-h1 {
-	text-transform: uppercase; color: darkcyan;	
 }
 
 body {
 	background-color: white;
     /*text-align: center;*/
 	padding: 0px;
-	margin: 0px;
-	/*background-image: url("https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");*/
+	margin: 0px 200px;
+	background-image: url("https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");
     background: rgba(255, 0, 0, 0.00);
+    min-width: 500px;
+    height:auto;
 	}
-.toplinks a {
-	font-size: 11px;
-	color: white;
-	margin: 5px;
-	
-}
-.toplinks {
-	background-color: teal;
-	padding: 5px 5px 7px 5px;
-	margin: 0px;	
-}
-
-.img1 {
-	opacity: 0.9
-}
-
-.internal_links {
-	font-size: 13px;
-	border: 2px solid teal;
-	border-radius: 5px;
-	border-left: 12px solid teal;
-}
-
-.internal_links a {
-	text-decoration: none;
-}
 
 h3 {
 	background-color: teal;
 	color: white;
 	padding: 10px;
 	text-align: center;	
+	letter-spacing: 2px;
+}
+	
+a  {
+	color: teal;
+}
+
+h1 {
+	text-transform: uppercase; color: darkcyan;	
 }
 
 img {
@@ -62,10 +45,118 @@ img {
 	border-radius: 25px;
 	border-left: 30px solid teal;
 	border-right: 30px solid teal;
-	
+	opacity: 0.9;
 }
 
-.footer {
+#introduction, #cycling, #cyclesport, #sitecontent p {
+	font-size: 15px;
+	font-weight: 100px;
+	letter-spacing: 0.5px;
+	color: dimgray;
+	min-width: 500px;
+	max-width: 900px;
+}
+
+.toplinks {
+	background-color: teal;
+	padding: 5px 5px 7px 5px;
+	margin: 0px;
+	text-align: center;
+	/*position: fixed;
+	top: 0px;
+	z-index: 5;*/
+}
+
+.toplinks a {
+	font-size: 10px;
+	color: white;
+	margin: 5px 12px;
+  	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.toplinks a:hover {
+	font-weight: bold;
+}
+
+/*.toplinks .contact {
+	visibility: hidden;
+}*/
+
+.img0 {
+	height: 30px;
+	width: 30px;
+	background-color:white;
+	border-style: solid;
+	border-color: white;
+	border-width: 0px 0px 0px 0px;
+}
+	
+.internal_links {
+	font-size: 13px;
+	border: 2px solid teal;
+	border-radius: 5px;
+	border-right: 12px solid teal;
+	margin-top: 20px;
+	/*width: 325px;*/
+}
+
+.internal_links a {
+    text-decoration: none;
+}
+
+.internal_links a:hover {
+	color: red;
+}
+.internal_links .div1 {
+	float: left;
+	margin: 9px 0px auto 17px;
+	width: %55;
+	text-align: center left;
+	letter-spacing: 4px;
+	/*background-color: black;*/
+}
+
+.internal_links .div2 {
+    margin-right: 10px;
+    /*background-color: red;*/
+	letter-spacing: 1px;
+}
+
+/*#cycling, #cyclesport {
+	height: 1000px;
+	overflow: scroll;
+}*/
+
+.share {
+	/*border: 0.5px solid LightGrey;*/
+	padding: 40px 0px;
+	position: relative;
+	text-align: center;
+	width: 100%
+}
+
+.share a {
+	background: teal;
+	color: white;
+	border: 0.5px red solid;
+	border-radius: 5px;
+	/*display: inline-block;*/
+	margin: 10px;
+	padding: 15px;
+	text-decoration: none;
+	font-family: 'Rockwell', serif;
+}
+
+.share a:hover {
+	background: red;
+	color; white;
+	border: 0.5px teal solid;
+	border-radius: 5px;
+	/*animation: ease;*/
+}
+
+#footer {
 	position: fixed;
 	font-size: 7px;
 	opacity: 0.5;
