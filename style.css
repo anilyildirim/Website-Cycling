@@ -1,0 +1,81 @@
+html {
+	font-family: Trebuchet MS;
+}
+
+a, h3 {
+	color: teal;
+}
+
+h1 {
+	text-transform: uppercase; color: darkcyan;	
+}
+
+body {
+	background-color: white;
+    /*text-align: center;*/
+	padding: 0px;
+	margin: 0px;
+	/*background-image: url("https://image.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg");*/
+    background: rgba(255, 0, 0, 0.00);
+	}
+.toplinks a {
+	font-size: 11px;
+	color: white;
+	margin: 5px;
+	
+}
+.toplinks {
+	background-color: teal;
+	padding: 5px 5px 7px 5px;
+	margin: 0px;	
+}
+
+.img1 {
+	opacity: 0.9
+}
+
+.internal_links {
+	font-size: 13px;
+	border: 2px solid teal;
+	border-radius: 5px;
+	border-left: 12px solid teal;
+}
+
+.internal_links a {
+	text-decoration: none;
+}
+
+h3 {
+	background-color: teal;
+	color: white;
+	padding: 10px;
+	text-align: center;	
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: auto;
+	background-color: teal;
+	border-radius: 25px;
+	border-left: 30px solid teal;
+	border-right: 30px solid teal;
+	
+}
+
+.footer {
+	position: fixed;
+	font-size: 7px;
+	opacity: 0.5;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: gray;
+	text-align: left;
+}
+
+.construction h1 {
+	text-align: center;
+}
