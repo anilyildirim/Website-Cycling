@@ -7,7 +7,6 @@
 html {
 	font-family: 'Roboto Slab', serif;
 	font-family: 'Raleway', sans-serif;
-	min-width:600px;
 }
 
 body {
@@ -17,7 +16,6 @@ body {
 	/*Burada background resmi önüne opacity 0.6 bir renk ekleyip koymak istedim olmadı*/
 	padding: 0px;
 	margin: 0;
-	min-width: 500px;
     height:auto;
 	}
 
@@ -52,6 +50,7 @@ header{
 	top: 0px;
 	z-index: 2;
 	height: auto;
+	display: block;
 }
 
 .toplinks {
@@ -166,7 +165,7 @@ a {
 }	
 
 #sitecontent {
-	background: linear-gradient(rgba(129, 197, 222,0.25), rgba(129, 197, 222,0.25)), url("https://wallpaper-house.com/data/out/8/wallpaper2you_254851.jpg");
+	background: linear-gradient(rgba(129, 197, 222,0.25), rgba(129, 197, 222,0.25)), url("https://cdn-cyclingtips.pressidium.com/wp-content/uploads/2013/10/PTR0929920.jpg");
     background-size: cover;
 	background-position:  center;
 	height: 25%;
@@ -188,7 +187,7 @@ a {
 	margin-left: 20px;
 	margin-top: 30px;
 	margin-right: 450px;
-	min-width: 300px;
+	min-width: 200px;
 	line-height: 1.4;
 }
 
@@ -236,4 +235,25 @@ footer {
 
 .construction h1 {
 	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		min-width: 100px;
+	}
+	body {
+		min-width: 100px;
+	}
+	.content p {
+		width: 80%;
+	}
+	.internal_links .div1 {
+	    float: none;
+	}
+	.internal_links .div2 {
+		text-align: center;
+	}
+	.toplinks a {
+		display: block;
+	}
 }
